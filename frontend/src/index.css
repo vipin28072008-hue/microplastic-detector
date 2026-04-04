@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  font-family: 'Poppins', sans-serif;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #F5F7FA;
+  color: #1F2933;
+  min-height: 100vh;
+}
+
+/* Scrollbar styling */
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #F5F7FA;
+}
+::-webkit-scrollbar-thumb {
+  background: #00B4D8;
+  border-radius: 3px;
+}
+
+/* Custom gradient text */
+.gradient-text {
+  background: linear-gradient(135deg, #0B3C5D, #00B4D8);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* Water shimmer background */
+.water-bg {
+  background: linear-gradient(135deg, #0B3C5D 0%, #0077B6 50%, #00B4D8 100%);
+}
+
+/* Card with glass effect */
+.glass-card {
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(0, 180, 216, 0.15);
+  box-shadow: 0 8px 32px rgba(11, 60, 93, 0.1);
+}
+
+/* Animated gradient border */
+.cyan-border-glow {
+  border: 2px solid #00B4D8;
+  box-shadow: 0 0 15px rgba(0, 180, 216, 0.3);
+}
+
+/* Processing dark bg */
+.ai-dark-bg {
+  background: linear-gradient(135deg, #0F2027 0%, #203A43 50%, #2C5364 100%);
+}
+
+/* Fade in animation delays */
+.delay-100 { animation-delay: 0.1s; opacity: 0; }
+.delay-200 { animation-delay: 0.2s; opacity: 0; }
+.delay-300 { animation-delay: 0.3s; opacity: 0; }
+.delay-400 { animation-delay: 0.4s; opacity: 0; }
+.delay-500 { animation-delay: 0.5s; opacity: 0; }
+
+/* Hover lift effect */
+.hover-lift {
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.hover-lift:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 12px 40px rgba(11, 60, 93, 0.15);
+}
+
+/* Wave divider */
+.wave-divider {
+  position: relative;
+  overflow: hidden;
+}
+
+/* Particle dots background */
+.dots-bg {
+  background-image: radial-gradient(circle, #00B4D820 1px, transparent 1px);
+  background-size: 30px 30px;
+}
